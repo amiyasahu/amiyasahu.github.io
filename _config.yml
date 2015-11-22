@@ -1,0 +1,61 @@
+# Dependencies
+gems:                [jekyll-paginate]
+markdown:            redcarpet
+#highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
+
+# Setup
+title:               Amiya Sahu
+tagline:             "Web Developer"
+description:         'A blog made from an IT lover about IT and other stuff (insert madness here). Based on the awesome <a href="https://github.com/poole/lanyon" target="_blank">Lanyon</a> theme, made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:                 https://amiyasahu.github.io
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Amiya Sahu
+  url:               https://www.facebook.com/amiyaece
+  email:             amiya053@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+# This website's repo
+github:
+  repo:           https://github.com/amiyasahu/amiyasahu.github.io
+
+exclude:
+  - templates
+  - LICENSE.md
+  - README.md
+  - LICENSE.lanyon
+  - README.lanyon
+
+## "Jekyll Now" template stuff here
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: amiya053@gmail.com
+  facebook: amiyaece
+  flickr:
+  github: amiyasahu
+  instagram:
+  linkedin:
+  pinterest:
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: 
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus: 
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: 

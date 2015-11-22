@@ -14,7 +14,7 @@ title:               Amiya Sahu
 tagline:             "Web Developer"
 description:         'My personal blog'
 url:                 https://amiyasahu.github.io
-baseurl:             ''
+baseurl:             https://amiyasahu.github.io
 paginate:            5
 
 # About/contact

@@ -14,7 +14,7 @@ title:               Amiya Sahu
 tagline:             "Web Developer"
 description:         'A blog made from an IT lover about IT and other stuff (insert madness here). Based on the awesome <a href="https://github.com/poole/lanyon" target="_blank">Lanyon</a> theme, made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 https://amiyasahu.github.io
-baseurl:             /
+baseurl:             ''
 paginate:            5
 
 # About/contact

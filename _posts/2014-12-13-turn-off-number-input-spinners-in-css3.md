@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Turn Off Number Input Spinners in CSS3
+title: How to turn off number input spinners in CSS3
 ---
 Modern browsers add little up down arrows to number inputs called spinners.
 

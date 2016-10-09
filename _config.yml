@@ -13,8 +13,8 @@ permalink:           none
 title:               Amiya Sahu
 tagline:             "Web Developer"
 description:         'I am a Web Developer , Blogger and Coffee addict.<br/> Java developer by profession , Q2A developer by addiction.<br/> This is my personal website where I write few stuff which could be useful for other developers .'
-url:                 https://amiyasahu.github.io
-baseurl:             https://amiyasahu.github.io
+url:                 https://localhost:4000
+baseurl:             
 paginate:            10
 
 # About/contact

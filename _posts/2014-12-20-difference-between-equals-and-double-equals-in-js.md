@@ -3,18 +3,19 @@ layout: post
 title: Difference between == and === in Javascript
 ---
 
-The == (or !=) operator performs an automatic type conversion if needed . The === (or !==) operator will not perform any conversion. It compares both the value and type, which could be considered faster than == .
+The `==` (or `!=`) operator performs an automatic type conversion if needed. 
 
-###Few Examples###
+In the otherhand, the `===` (or `!==`) operator will not perform any conversion. It compares both the value and type, which could be considered faster than `==`.
 
-{% highlight js %}
-[10] === 10     // is false
-[10]  == 10     // is true
-'10' == 10      // is true
-'10' === 10     // is false
-[]   == 0       // is true
-[] ===  0       // is false
-'' == false     // is true 
-'' === false    // is false
-true == "a"     // is false
-{% endhighlight %}
+### Few Examples
+
+| Code            | Result
+| `[10] === 10`   | `false`
+| `[10]  == 10`   | `true`
+| `'10' == 10`    | `true`
+| `'10' === 10`   | `false`
+| `[]   == 0`     | `true`
+| `[] ===  0`     | `false`
+| `'' == false`   | `true `
+| `'' === false`  | `false`
+| `true == "a"`   | `false`

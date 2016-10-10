@@ -3,9 +3,7 @@ layout: post
 title: How to Make a dropdown readonly using Jquery
 ---
 
-<blockquote>
-Dropdown (select element) is always read only. User do not edit it. User can select any of the option of its own chice. Unlike other html elements, it dont have a attribute which can make the element readony and prevent users to change its value. 
-</blockquote>
+> Dropdown (select element) is always read only. User do not edit it. User can select any of the option of its own chice. Unlike other html elements, it dont have a attribute which can make the element readony and prevent users to change its value. 
 
 So how do we do this, when we want to prevent the user not to edit its selected option. 
 
@@ -21,7 +19,7 @@ So we need to use a hidden field to store disabled selected-option value. When t
 
 Here you go with a code example -
 
-###HTML code###
+### HTML code
 {% highlight html %}
 <form action="#">
     <select id="choose" name="alpha">
@@ -33,39 +31,36 @@ Here you go with a code example -
 
 <button id="toggle">toggle enable/disable</button>
 {% endhighlight %}
-###JQuery code###
+### JQuery code
 {% highlight js %}
 jQuery(document).ready(function($) {
     var $select = $('#choose'), 
     name = $select.prop('name'), 
     $form = $select.parent('form');
 
-	//store the name in the data attribute 
+    //store the name in the data attribute 
     $select.data('original-name', name);  
 
     $('#toggle').on('click', function(event) {
-
         if($select.prop('disabled')){
             //enable the element
             //remove the hidden fields if any
             $form.find('input[type="hidden"][name='+name+']')
-            	 .remove(); 
+                 .remove(); 
             //restore the name and enable 
-            $select.prop({name : name, 
-            				disabled : false}); 
+            $select.prop({ name : name, 
+            		disabled : false}); 
         } else {
             //disable it 
-            var $hiddenInput = $('<input/>', 
-            					{   type  : 'hidden', 
-            						name  : name, 
-            						value : $select.val()
-            					});
+            var $hiddenInput = $('<input/>', { type  : 'hidden',
+                    	name  : name, 
+                    	value : $select.val()
+                    });
 
-			//append the hidden field to the form
+            //append the hidden field to the form
             $form.append( $hiddenInput );  
             //change name and disbale 
-            $select.prop({ name : name + "_1",
-            				 disabled : true });
+            $select.prop({ name : name + "_1", disabled : true });
         }
     });
 });

@@ -1,6 +1,6 @@
 # Dependencies
 gems:                [jekyll-paginate]
-markdown:            redcarpet
+markdown:            kramdown
 #highlighter:         pygments
 
 # Permalinks
@@ -12,7 +12,7 @@ permalink:           none
 # Setup
 title:               Amiya Sahu
 tagline:             "Web Developer"
-description:         'I am a Web Developer , Blogger and Coffee addict.<br/> Java developer by profession , Q2A developer by addiction.<br/> This is my personal website where I write few stuff which could be useful for other developers .'
+description:         'I am a Web Developer, Blogger and Coffee addict.Java developer by profession, Q2A developer by addiction.This is my personal website where I write few stuff which could be useful for other developers.'
 url:                 https://localhost:4000
 baseurl:             
 paginate:            10
@@ -20,11 +20,14 @@ paginate:            10
 # About/contact
 author:
   name:              Amiya Sahu
-  url:               https://www.facebook.com/amiyaece
+  url:               https://twitter.com/Amiya_Sahu
   email:             amiya053@gmail.com
 
 # Custom vars
 version:             1.0.0
+
+#asset version will get upgraded once there is a new version released
+asset_version:       1.0.0
 
 # This website's repo
 github:
@@ -42,7 +45,7 @@ exclude:
 footer-links:
   dribbble:
   email: amiya053@gmail.com
-  facebook: amiyaece
+  facebook: sahu.amiya
   flickr:
   github: amiyasahu
   instagram:
@@ -58,4 +61,7 @@ footer-links:
 disqus: 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-57146880-1
+
+#additional settings 
+envrionment : prod    #defines which envriment it is running

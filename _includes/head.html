@@ -17,11 +17,14 @@
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
-
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
+  {% if site.envrionment == "dev" %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css?v={{ site.asset_version }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css?v={{ site.asset_version }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css?v={{ site.asset_version }}">
+  {% else %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.min.css?v={{ site.asset_version }}">
+  {% endif %}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
   <!-- Icons -->

@@ -3,7 +3,7 @@ layout: post
 title: How to create nested HTML elements in JQuery
 ---
 
-###JQuery code###
+### JQuery code
 {% highlight js %}
 var $elem = $('body div.main');
 $elem.append(
@@ -19,7 +19,7 @@ $elem.append(
         );
 {% endhighlight %}
 
-###Result###
+### Result
 {% highlight html %}
 <div class="main">
 	<div class="wrapper">
@@ -32,5 +32,5 @@ $elem.append(
 	</div>
 </div>
 {% endhighlight %}
-###Fiddle Example###
+Here is a live example
 <script async src="//jsfiddle.net/amiya/9kggv7r7/4/embed/js,html,result/"></script>

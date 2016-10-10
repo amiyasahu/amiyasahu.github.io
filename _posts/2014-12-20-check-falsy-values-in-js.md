@@ -18,16 +18,15 @@ function trueFalseCheck (variable) {
 	    console.log("False");
 	}
 }
-
-trueFalseCheck(null);       //False
-trueFalseCheck('');         //False
-trueFalseCheck(0);          //False
-trueFalseCheck(undefined);  //False
-trueFalseCheck(false);      //False
-trueFalseCheck(NaN);        //False
-
-trueFalseCheck(true);		//True
-trueFalseCheck('Amiya'); 	//True
-trueFalseCheck(10); 		//True
-
 {% endhighlight %}
+
+| Usage | Result
+| `trueFalseCheck(null)`       | `false` 
+| `trueFalseCheck('')`         | `false` 
+| `trueFalseCheck(0)`          | `false` 
+| `trueFalseCheck(undefined)`  | `false` 
+| `trueFalseCheck(false)`      | `false` 
+| `trueFalseCheck(NaN)`        | `false` 
+| `trueFalseCheck(true)`		| `true` 
+| `trueFalseCheck('Amiya')` 	| `true` 
+| `trueFalseCheck(10)` 		| `true` 

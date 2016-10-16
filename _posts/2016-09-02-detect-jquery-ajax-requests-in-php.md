@@ -3,8 +3,8 @@ layout: post
 title: Detect JQuery AJAX Requests with PHP
 ---
 
-```php
-
+{% highlight php%}
+<?php
 // returns true if the request is made with XMLHttpRequest header 
 function isXhr() {
     return $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
@@ -16,5 +16,4 @@ if( isXhr() ) {
 } else {
     echo "The AJAX Request might not be made from JQuery ";
 }
-
-```
+{% endhighlight %}

@@ -31,6 +31,7 @@ asset_version:       1.0.0
 
 # This website's repo
 github:
+  profile:        https://github.com/amiyasahu
   repo:           https://github.com/amiyasahu/amiyasahu.github.io
 
 exclude:

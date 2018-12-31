@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Handy javascript utility methods
+title: Handy JavaScript Utility Methods
 ---
 
 ## Update Object state and return a new object by merging the socond onto the first one

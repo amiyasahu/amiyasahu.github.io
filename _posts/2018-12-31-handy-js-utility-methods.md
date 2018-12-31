@@ -7,10 +7,10 @@ title: Handy javascript utility methods
 
 {% highlight js %}
 const updateObj = (oldObject, newObject) => {
-	return {
-		...oldObject, 
-		...newObject
-	};
+  return {
+    ...oldObject, 
+    ...newObject
+  };
 };
 
 // usage 

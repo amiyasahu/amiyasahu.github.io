@@ -11,8 +11,8 @@ permalink:           none
 
 # Setup
 title:               Amiya Sahu
-tagline:             "Web Developer"
-description:         'I am a Web Developer, Blogger and Coffee addict.Java developer by profession, Q2A developer by addiction.This is my personal website where I write few stuff which could be useful for other developers.'
+tagline:             "Developer"
+description:         'I am a Developer, Blogger and Coffee addict. Java developer by profession, Q2A developer by addiction. This is my personal website where I write few stuff which could be useful for other developers.'
 url:                 https://localhost:4000
 baseurl:             
 paginate:            10
@@ -45,8 +45,8 @@ exclude:
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: amiya053@gmail.com
-  facebook: sahu.amiya
+  email: 
+  facebook: 
   flickr:
   github: amiyasahu
   instagram:
@@ -54,7 +54,7 @@ footer-links:
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: 
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts

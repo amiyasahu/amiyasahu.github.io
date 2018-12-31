@@ -14,8 +14,6 @@ To create singleton instance per thread, we can make use of a ThreadLocal instan
 When we invoke `get()` on a ThreadLocal instance, it returns an independently initialized copy of the variable for each thread. ThreadLocal instances are typically private static fields in classes which we wish to make singleton per thread.
 
 Each thread holds an implicit reference to its copy of a thread-local variable as long as the thread is alive and the ThreadLocal instance is accessible; after a thread goes away, all of its copies of thread-local instances are garbage colelcted.
- 
-## Example 1 - By using static reference of ThreadLocal 
 
 {% highlight java %}
 package com.amiyasahu;

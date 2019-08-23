@@ -66,3 +66,4 @@ google_analytics: UA-57146880-1
 
 #additional settings 
 envrionment : prod    #defines which envriment it is running
+theme: jekyll-theme-architect

@@ -45,8 +45,10 @@ If you are using java8 or above, you can replace the _threadLocal definition wit
 
 {% highlight java %}
 
-ThreadLocal<Singleton> _threadLocal = ThreadLocal.withInitial( () -> new Singleton() )
-
+ThreadLocal<Singleton> _threadLocal = ThreadLocal.withInitial( 
+                                            () -> new Singleton() 
+                        );
+                        
 {% endhighlight %}
 
 Now lets create the test method. Here we will print the instance hashcode with the thread name, so that we can conclude which instance is bound for a thread.

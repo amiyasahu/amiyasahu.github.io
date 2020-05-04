@@ -20,11 +20,8 @@ package com.amiyasahu;
 
 public class Singleton {
 
-    /**
-     * Private constructor
-     */
     private Singleton() {
-
+        // Private constructor
     }
 
     private static ThreadLocal<Singleton> _threadLocal = 
@@ -37,13 +34,17 @@ public class Singleton {
 
     /**
      * Returns the thread local singleton instance
-     * 
-     * @return
      */
     public static Singleton getInstance() {
         return _threadLocal.get();
     }
 }
+{% endhighlight %}
+
+If you are using java8 or above, you can replace the _threadLocal definition with below.
+
+{% highlight java %}
+ThreadLocal<YourObject> threadLocalYourObject = ThreadLocal.withInitial( () -> new YourObject() )
 {% endhighlight %}
 
 Now lets create the test method. Here we will print the instance hashcode with the thread name, so that we can conclude which instance is bound for a thread.

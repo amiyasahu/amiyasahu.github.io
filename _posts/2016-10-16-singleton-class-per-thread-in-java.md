@@ -44,7 +44,9 @@ public class Singleton {
 If you are using java8 or above, you can replace the _threadLocal definition with below.
 
 {% highlight java %}
-ThreadLocal<YourObject> threadLocalYourObject = ThreadLocal.withInitial( () -> new YourObject() )
+
+ThreadLocal<Singleton> _threadLocal = ThreadLocal.withInitial( () -> new Singleton() )
+
 {% endhighlight %}
 
 Now lets create the test method. Here we will print the instance hashcode with the thread name, so that we can conclude which instance is bound for a thread.

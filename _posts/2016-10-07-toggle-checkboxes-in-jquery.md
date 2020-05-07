@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toggle Checkboxes using JQuery ( Select All/Select None )
+title: Toggle Checkboxes using JQuery (Select All/Select None)
 ---
 
 When user clicks `Select All` checkbox, the code first checks the status of checkbox with id `select-all`, and loops though each checkbox with class `checkbox` update their checked property to `true`. When it is clicked again then it will update their checked property to `false`.

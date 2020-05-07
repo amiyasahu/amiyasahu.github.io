@@ -7,13 +7,13 @@ The below function can count the number of words in a line by ignoring the white
 
 {% highlight js %}
 function wordCount (str) {
-    if(!!str)
+    if(!!str){
         return str.trim().replace(/\s+/gi, ' ').split(' ').length;
-    else 
-        return 0;
+    }
+    return 0;
 }
 
-//usage 
+// Usage 
 var str = "Hello There. How is the   weather     today in   India",
 count = wordCount();
 console.log(count); // 8

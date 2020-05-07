@@ -3,7 +3,7 @@ layout: post
 title: Detect JQuery AJAX Requests with PHP
 ---
 
-When you make a AJAX call to the server using JQUery, it adds a special header along with the request. 
+When you make a AJAX call to the server using JQuery, it adds a special header along with the request.
 
 So you can check on the server side against this header.
 
